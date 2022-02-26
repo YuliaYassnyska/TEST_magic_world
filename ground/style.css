@@ -1,0 +1,15 @@
+body {
+    width: auto;
+    height: 97.6vh;
+    background: linear-gradient(to top, #b557ad, #9842f5);
+    display: flex;
+}
+
+.player {
+    width: 2rem;
+    height: 4rem;
+    background-color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
