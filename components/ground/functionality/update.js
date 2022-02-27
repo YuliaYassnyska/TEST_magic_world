@@ -1,13 +1,12 @@
 import {PressRight, PressLeft, PressForward, PressBack} from "./keyboard.js"
+import {moveMap} from "./createMap.js"
 
-function groundPosition(x,y,rx) {
+function groundPosition(x,y) {
 	this.x = x;
 	this.y = y;
-	this.rx = rx;
 }
 
-let position = new groundPosition(0,0,45);
-let ground = document.getElementById("ground");
+let position = new groundPosition(0,0);
 
 export const update = () => {
 	
@@ -23,8 +22,6 @@ export const update = () => {
 	
 	// Изменяем координаты мира (для отображения)
 	
-	ground.style.transform = 
-	"rotateX(" + (position.rx) + "deg)" +
-	"translate3d(" + (-position.x) + "px," + (-position.y) + "px," + 0 + "px)";
+	moveMap(position.x, position.y);
 	
 };
