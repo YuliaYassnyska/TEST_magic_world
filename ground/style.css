@@ -1,15 +1,33 @@
-body {
-    width: auto;
-    height: 97.6vh;
-    background: linear-gradient(to top, #b557ad, #9842f5);
-    display: flex;
+#container {
+    position:absolute;
+	width:1200px;
+	height:800px;
+	border:2px solid #000000;
+    perspective:600px;
+    overflow:hidden;
 }
 
-.player {
-    width: 2rem;
-    height: 4rem;
-    background-color: black;
-    margin-top: auto;
-    margin-bottom: auto;
-    
+#ground {
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to top, #b557ad, #9842f5);
+    transform:translate3d(200px, 0, 0) rotateX(45deg);
+    transform-style: preserve-3d;
+}
+
+#player {
+    width: 25px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(201, 165, 89);
+    transform: translateY(-250px);
+}
+
+#tree {
+    width: 15px;
+    height: 70px;
+    background-color: #0a4e19;
 }
